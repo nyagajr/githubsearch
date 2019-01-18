@@ -1,0 +1,17 @@
+.head{
+  text-align: center;
+}
+/* .container{
+  background-color: white;
+} */
+.box1{
+  width: 200px;
+  padding: 100px;
+  border: 1px solid;
+  margin: 20px;
+  bottom: 4px;
+}
+body{
+  /* background-color: gray; */
+  padding: 20px;
+}
