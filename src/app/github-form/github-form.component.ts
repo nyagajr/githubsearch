@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+// import { HttpservicesService } from '../http/httpservices';
+
 
 @Component({
   selector: 'app-github-form',
@@ -7,6 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GithubFormComponent implements OnInit {
 
+  // service:token
   constructor() { }
 
   ngOnInit() {
