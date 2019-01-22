@@ -1,17 +1,24 @@
 .head{
   text-align: center;
+  padding: 50px;
+  float: right;
 }
 /* .container{
   background-color: white;
 } */
 .box1{
-  width: 200px;
-  padding: 100px;
+  padding: 150px;
+  padding-bottom: 300px;
   border: 1px solid;
-  margin: 20px;
-  bottom: 4px;
+  margin: 50px;
+  float: none;
 }
 body{
   /* background-color: gray; */
   padding: 20px;
+}
+.search{
+ padding: 70px;
+ color: blue;
+ float: right;
 }
