@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Gitsearch } from './gitsearch';
+import { GitRepo } from './git-repo';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'GitHub Search';
+  searches = [
+        new Gitsearch(1,'hello you','sd'),
+        new Gitsearch(2,'hello you','sd'),
+        new Gitsearch(3, 'hello you','sd'),
+        new Gitsearch(4, 'hello you','sd'),
+        ]
+
 }
