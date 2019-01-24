@@ -1,0 +1,41 @@
+<body>
+  <div class="container">
+    <div class="navbar" >
+      {{name.login}}<hr>
+      <h1 appUnderline>Github Search 🔍</h1>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="row">
+          <form class="" (ngSubmit)='ngOnInit()' #searchForm='ngForm'>
+            <input type="text" placeholder="search.." [(ngModel)] ="userName" (keyup.enter)="ngOnInit()" name= "userName" >
+            <span><button type="submit" class="btn btn-primary btn-sm">Search</button></span>
+          </form>
+        </div><br>
+        <div class="row">
+          <img class= "img-thumbnail" src="{{name.avatar_url}}" alt="">
+        </div>
+
+      </div>
+      <div class="col-md-6">
+        <div class="navbar">
+          <h3 appHighlight>Repositories</h3><hr>
+        </div>
+        <div class="row" >
+          <ul>
+            <hr>
+            <br>
+            <div class="box">
+            <li appHighlight>{{name.followers}} Follower</li>
+
+            <li appHighlight>{{name.following}} Following</li>
+
+            <li appHighlight>{{name.public_repos}} Public Repositories</li>
+            </div>
+            <hr>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

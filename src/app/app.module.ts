@@ -2,33 +2,35 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
-import { RouterModule, Routes } from '@angular/router';
+
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { GithubFormComponent } from './github-form/github-form.component';
-import { LinkComponent } from './link/link.component';
+import { GetInfoComponent } from './get-info/get-info.component';
+import { UnderlineDirective } from './underline.directive';
+import { RouterModule, Routes } from '@angular/router';
 import { NotFoundComponent } from './not-found/not-found.component';
 
+
 const routes:Routes=[
-  {path:"searches",component:AppComponent},
-  {path:"link",component:LinkComponent},
-  {path:"",redirectTo:"/searches",pathMatch:"full"},
-  {path:'**',component:NotFoundComponent}
+{path:'**',component:NotFoundComponent}
 ]
 @NgModule({
   declarations: [
     AppComponent,
-    GithubFormComponent,
-    LinkComponent,
-    NotFoundComponent
+    GetInfoComponent,
+    UnderlineDirective,
+    NotFoundComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule,
     HttpClientModule,
+    FormsModule,
     RouterModule.forRoot(routes)
+
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -9,12 +9,12 @@ body{
   padding-left: 40px;
   padding-right: 40px;
   min-height: 600px
-
 }
-h1{
-  font-family: "Algerian", Times, serif;
+.box{
+  {
+  width: 320px;
+  padding: 10px;
+  border: 5px solid;
+  margin: 0;
 }
-.b1{
-  background-color: #4FA2D9;
-  border-radius: 25px;
 }
