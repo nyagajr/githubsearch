@@ -7,8 +7,6 @@ import { Gitsearch } from '../gitsearch';
 })
 export class SearchService {
 
-  // search(){
-  //   return earches;
-  // }
+
   constructor() { }
 }

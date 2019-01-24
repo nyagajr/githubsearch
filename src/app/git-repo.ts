@@ -1,4 +1,7 @@
 export class GitRepo {
   constructor(
-    public repo:any){}
-}
+    public name: any,
+      public html_url: any,
+      public description: any,
+    ){}
+  }
