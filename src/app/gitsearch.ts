@@ -1,7 +1,7 @@
 export class Gitsearch {
   constructor(
-    public image:any,
-    public username:string,
-    public repo:any,
+    public name: any,
+      public html_url: any,
+      public description: any,
     ){}
-}
+  }
